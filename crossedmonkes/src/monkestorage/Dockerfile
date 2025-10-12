@@ -10,7 +10,7 @@ RUN pip3 install -r /monkestorage/requirements.txt
 COPY . /monkestorage
 WORKDIR /monkestorage
 
-RUN /usr/sbin/useradd --no-create-home -u 1000 www-monke && \
+RUN /usr/sbin/useradd --no-create-home www-monke && \
     mkdir -p /storage && \
     chown www-monke:www-monke /storage
 USER www-monke

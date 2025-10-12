@@ -7,7 +7,7 @@ COPY ./requirements.txt /monkebot/requirements.txt
 RUN pip3 install -r /monkebot/requirements.txt
 
 COPY . /monkebot
-RUN /usr/sbin/useradd --no-create-home -u 1000 www-monke
+RUN /usr/sbin/useradd --no-create-home www-monke
 USER www-monke
 WORKDIR /monkebot
 
