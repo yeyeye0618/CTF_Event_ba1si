@@ -11,9 +11,9 @@
 | [secure blog](secureblog)                    |   ghostccamm    |   medium   |    idk |
 | [smooth jazz](smooth-jazz)                   |   hashkitten    |   medium   |    idk |
 | [0day blog](0day-blog)                       |   ghostccamm    |    hard    |    idk |
+| [crossed monkes](crossedmonkes)              |   ghostccamm    |    hard    |    idk |
 
 ### Bonus (Docker 建不起來 / 或著不保證能不能打)
 
-| Challenge                       |   Author   | Difficulty | Solves | Why not work |
-| :------------------------------ | :--------: | :--------: | -----: | :----------: |
-| [crossed monkes](crossedmonkes) | ghostccamm |    hard    |    idk | not test yet |
+| Challenge | Author | Difficulty | Solves | Why not work |
+| :-------- | :----: | :--------: | -----: | :----------: |
