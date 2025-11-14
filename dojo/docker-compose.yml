@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  dojo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dojo
+    image: dojo:latest
+    ports:
+      - "40004:8080"
+    environment:
+      PORT: 8080
+      JWT_SECRET: 89c574f653e5a92c3ca6ff0a7241b2005930bdd5064262ab9c00a65b3d555c87
+      FLAG: bctf{D3FAul7_rA73_l1m17_fUnc710N5_aR3_5caRy}
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
+    volumes:
+      - ./data:/app/data
+    labels:
+      challenge.name: "dojo"
+      challenge.category: "web"
+      challenge.author: "mbund"
+      challenge.difficulty: "hard"
+      challenge.rate_limit: "20 req/sec"

@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  instructions:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: instructions
+    image: instructions
+    ports:
+      - "40007:80"
+    restart: unless-stopped
+    networks:
+      - ctf-net
+    labels:
+      challenge.name: "instructions"
+      challenge.category: "web"
+      challenge.difficulty: "easy"
+      challenge.author: "mbund"
+      challenge.flag: "bctf{c0mp1l1n6_ru57_m4k35_my_4ud10_570p_w0rk1n6_2a14bdd6fa28e02d}"
+
+networks:
+  ctf-net:
+    driver: bridge
