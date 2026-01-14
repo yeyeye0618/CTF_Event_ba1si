@@ -1,9 +1,0 @@
-version: "3.8"
-
-services:
-  ssfs:
-    build: .
-    image: ssfs
-    ports:
-      - "40006:5000"
-    restart: unless-stopped
