@@ -1,7 +1,5 @@
 # CTF Event : SwampCTF 2024
 
-## Rating : 50
-
 | Challenge                              | Difficulty | Solves |
 | :------------------------------------- | :--------: | -----: |
 | [BrailleDB-1](BrailleDB-1)             |    easy    |     78 |
